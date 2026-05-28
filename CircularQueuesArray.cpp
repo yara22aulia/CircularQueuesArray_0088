@@ -9,6 +9,8 @@ private:
     int queue_array[max];
 
 public:
+    Queues()
+    {}
 
 };
 
