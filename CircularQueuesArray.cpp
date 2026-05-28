@@ -11,31 +11,31 @@ private:
 public:
     Queues()
     {
-         FRONT = -1;
+        FRONT = -1;
         REAR = -1;
     }
 
-     void insert()
+    void insert()
     {
-         int num;
+        int num;
         cout << "Enter a number: ";
         cin >> num;
         cout << endl;
 
-             // cek apakah antrian penuh
+        // cek apakah antrian penuh
         if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
         {
             cout << "\nQueue overflow\n";
             return;
         }
 
-         // cek apakah antrian kosong
+        // cek apakah antrian kosong
         if (FRONT == -1)
         {
             FRONT = 0;
             REAR = 0;
         }
-           else
+        else
         {
             // jika rear berada di posisi terakhir array, kembali ke awal array
             if (REAR == max - 1)
@@ -43,7 +43,7 @@ public:
             else
                 REAR = REAR + 1;
         }
+        queue_array[REAR] = num;
     }
 
 };
-
