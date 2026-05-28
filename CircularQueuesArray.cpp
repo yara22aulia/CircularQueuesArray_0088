@@ -62,7 +62,7 @@ public:
             FRONT = -1;
             REAR = -1;
         }
-                else
+        else
         {
             // jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
             if (FRONT == max - 1)
@@ -70,6 +70,9 @@ public:
             else
                 FRONT = FRONT + 1;
         }
-    }    
+    }   
+    
+    void display()
+    {}
 
 };
